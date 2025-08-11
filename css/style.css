@@ -1,0 +1,200 @@
+/* - **Couleur principale** : `#1E88E5` (bleu vif) – pour le header et les accents
+- **Couleur secondaire** : `#1565C0` (bleu foncé) – pour le hover de la barre latérale et les titres
+- **Couleur de fond** : `#F4F6F8` (gris clair) – pour le background global
+- **Couleur des cartes** : `#FFFFFF` (blanc) – avec ombre douce pour la profondeur
+- **Texte principal** : `#333333` (gris foncé)
+- **Texte secondaire** : `#757575` (gris moyen)
+- **Accent** : `#43A047` (vert) – pour les chiffres positifs, succès ou validations
+- **Erreur/Alerte** : `#E53935` (rouge) – pour erreurs ou avertissements{} */
+
+:root {
+    --primaire: #1E88E5;
+    --secondary: #1565C0;
+    --fond-color: #F4F6F8;
+    --card-color: #fff;
+    --text-primary: #33333333;
+    --text-secondary: #757575;
+    --positif: #43A047;
+    --error: #E53935;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-Bold';
+    src: url(../assets/fonts/static/PlusJakartaSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-Medium';
+    src: url(../assets/fonts/static/PlusJakartaSans-Medium.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: 'PlusJakartaSans-Medium';
+    background: var(--fond-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: var(--primaire);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+header .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    cursor: pointer;
+    padding-right: 80px;
+}
+
+header img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #fff;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown a:hover {
+    background: #ecf0f1;
+}
+
+.sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 220px;
+    height: calc(100% - 60px);
+    background: var(--secondary);
+    color: #fff;
+    padding-top: 20px;
+    overflow-y: auto;
+}
+
+
+
+.main {
+    margin-left: 220px;
+    padding: 80px 20px 20px;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard {
+   margin-bottom: 15px;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: var(--card-color);
+    border-right: 3px solid var(--secondary);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.card strong {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+}
+
+.tables {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+
+
+/* * TABLES */
+*/ .tables {
+    display: flex;
+    gap: 20px;
+}
+
+.table-section {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.table-section h2 {
+    margin-bottom: 15px;
+    font-family: 'PlusJakartaSans-Medium';
+    font-size: 18px;
+    color: var(--secondary);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    font-family: 'PlusJakartaSans-Medium';
+    color: var(--color-text);
+}
+
+thead {
+    background: #f8f8f8;
+    font-weight: bold;
+}

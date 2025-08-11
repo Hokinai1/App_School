@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost'; // ou 127.0.0.1
-$dbname = 'print_store'; // Remplacez par le nom de votre base
+$dbname = 'my_school'; // Remplacez par le nom de votre base
 $username = 'root'; // Par défaut sur XAMPP ou Uwamp
 $password = ''; // Par défaut vide sur XAMPP ou Uwamp
 
