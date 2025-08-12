@@ -1,0 +1,140 @@
+
+    body {
+        
+        margin: 20px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 1200px;
+        margin-bottom: 20px;
+    }
+
+    th,
+    td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    th {
+        background-color: #f0f0f0;
+        font-size: 10px;
+    }
+
+    button {
+        padding: 6px 12px;
+        cursor: pointer;
+    }
+
+    .btn-danger {
+        background: #e74c3c;
+        color: white;
+        border: none;
+    }
+
+    .btn-edit {
+        background: #3498db;
+        color: white;
+        border: none;
+    }
+
+    #btn-add{
+         background: #3498db;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+
+    #popup-add,
+    #popup-edit {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popup-content {
+        background: white;
+        padding: 20px;
+        border-radius: 6px;
+        max-width: 500px;
+        width: 90%;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .popup-content label {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .popup-content input,
+    .popup-content select,
+    .popup-content textarea {
+        width: 100%;
+        padding: 6px;
+        box-sizing: border-box;
+    }
+
+    .close-btn {
+        background: #e74c3c;
+        color: white;
+        border: none;
+        padding: 4px 8px;
+        float: right;
+        cursor: pointer;
+    }
+
+    .alert-success {
+        background: #2ecc71;
+        color: white;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+    }
+
+    .alert-error {
+        background: #e74c3c;
+        color: white;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+    }
+
+    .statut-actif {
+        color: green;
+        font-weight: bold;
+    }
+
+    .statut-inactif {
+        color: red;
+        font-weight: bold;
+    }
+
+    .btn-teacher {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+
+    .btns {
+        display: flex;
+    }
+
+    .inputs {
+        display: flex;
+        gap: 10px;
+    }
+
+    .long {
+        justify-content: space-between;
+    }

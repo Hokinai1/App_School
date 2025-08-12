@@ -35,18 +35,14 @@ $role = $_SESSION['user_role'] ?? 'user';
   // on definit le titre a afficher dans l'onglet
   $titre = "Tableau de bord";
   ?>
-
-
   <header>
     <?php
     // insertion du sidebar
     @include('./includes/header.php');
     ?>
   </header>
-
   <div class="sidebar">
     <?php
-
     // insertion du sidebar
     @include('./includes/sidebar.php');
     ?>
