@@ -141,18 +141,18 @@ $role = $_SESSION['user_role'] ?? null;
     <li class="<?= ($currentPage === 'dashboard') ? 'active' : '' ?>"><a href="home.php"> Tableau de bord</a></li>
     <hr>
     <br>
-    <li class="<?= ($currentPage === 'teachers') ? 'active' : '' ?>"><a href="enseignants.php">Gestion enseignants</a></li>
-    <li class="<?= ($currentPage === 'classe') ? 'active' : '' ?>"><a href="classes.php">Gestion des classes</a></li>
-    <li class="<?= ($currentPage === 'matières') ? 'active' : '' ?>"><a href="matieres.php"> Gestion des matières</a></li>
-    <li class="<?= ($currentPage === 'finance') ? 'active' : '' ?>"><a href="finances.php"> Gestion des finances</a></li>
-    <li class="<?= ($currentPage === 'notes') ? 'active' : '' ?>"><a href="notes.php"> Gestion des notes</a></li>
-    <li class="<?= ($currentPage === 'bulletin') ? 'active' : '' ?>"><a href="bulletins.php"> Gestion des bulletins</a></li>
+    <li class="<?= ($currentPage === 'eleve') ? 'active' : '' ?>"><a href="eleves.php">Elèves</a></li>
+    <li class="<?= ($currentPage === 'teachers') ? 'active' : '' ?>"><a href="enseignants.php">Enseignants</a></li>
+    <li class="<?= ($currentPage === 'classe') ? 'active' : '' ?>"><a href="classes.php">Classes</a></li>
+    <li class="<?= ($currentPage === 'matières') ? 'active' : '' ?>"><a href="matieres.php"> Matières</a></li>
+    <li class="<?= ($currentPage === 'finance') ? 'active' : '' ?>"><a href="finances.php"> Finances</a></li>
+    <li class="<?= ($currentPage === 'notes') ? 'active' : '' ?>"><a href="notes.php"> Notes</a></li>
+    <li class="<?= ($currentPage === 'bulletin') ? 'active' : '' ?>"><a href="bulletins.php"> Bulletins</a></li>
+    <li class="<?= ($currentPage === 'archive') ? 'active' : '' ?>"><a href="archives.php"> Archivages</a></li>
 
         <li class="<?= ($currentPage === 'parametre') ? 'active' : '' ?>"><a href="config.php"> Configurations</a></li>
             <?php if ($role === 'admin'): ?>
     <?php endif; ?> 
-                <div class=""></div> <br> <br> <br>
-                <br>
                 <hr>
     <li onclick=" confirmerDeconnexion()" class="<?= ($currentPage === 'deconnexion') ? 'active' : '' ?> "><a href="#"> Déconnexion</a></li>
 
