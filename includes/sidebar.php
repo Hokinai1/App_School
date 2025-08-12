@@ -97,6 +97,7 @@ $role = $_SESSION['user_role'] ?? null;
 
     ul li:hover {
         background: #F4F6F8;
+        
     }
 
     a:hover {
@@ -143,11 +144,11 @@ $role = $_SESSION['user_role'] ?? null;
     <li class="<?= ($currentPage === 'teachers') ? 'active' : '' ?>"><a href="enseignants.php">Gestion enseignants</a></li>
     <li class="<?= ($currentPage === 'classe') ? 'active' : '' ?>"><a href="classes.php">Gestion des classes</a></li>
     <li class="<?= ($currentPage === 'matières') ? 'active' : '' ?>"><a href="matieres.php"> Gestion des matières</a></li>
-    <li class="<?= ($currentPage === 'finance') ? 'active' : '' ?>"><a href="#"> Gestion des finances</a></li>
-    <li class="<?= ($currentPage === 'notes') ? 'active' : '' ?>"><a href="#"> Gestion des notes</a></li>
-    <li class="<?= ($currentPage === 'bulletin') ? 'active' : '' ?>"><a href="#"> Gestion des bulletins</a></li>
+    <li class="<?= ($currentPage === 'finance') ? 'active' : '' ?>"><a href="finances.php"> Gestion des finances</a></li>
+    <li class="<?= ($currentPage === 'notes') ? 'active' : '' ?>"><a href="notes.php"> Gestion des notes</a></li>
+    <li class="<?= ($currentPage === 'bulletin') ? 'active' : '' ?>"><a href="bulletins.php"> Gestion des bulletins</a></li>
 
-        <li class="<?= ($currentPage === 'parametre') ? 'active' : '' ?>"><a href="#"> Configurations</a></li>
+        <li class="<?= ($currentPage === 'parametre') ? 'active' : '' ?>"><a href="config.php"> Configurations</a></li>
             <?php if ($role === 'admin'): ?>
     <?php endif; ?> 
                 <div class=""></div> <br> <br> <br>
