@@ -134,7 +134,7 @@ $enseignants = $pdo->query("SELECT * FROM enseignants ORDER BY nom ASC")->fetchA
 
     <div class="main">
         <div class="dashboard">
-            h1><?= $titre ?></h1>
+            <h1><?= $titre ?></h1>
             <p>Bienvenue ! Voici un aperçu des activité de votre école.</p>
         </div>
 
