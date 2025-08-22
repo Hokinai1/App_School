@@ -105,7 +105,7 @@ $enseignants = $pdo->query("SELECT * FROM enseignants ORDER BY nom ASC")->fetchA
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/enseignants.css">
-
+    <link rel="shortcut icon" href="./assets/icons/icon.png" type="image/x-icon">
 </head>
 
 
@@ -134,7 +134,7 @@ $enseignants = $pdo->query("SELECT * FROM enseignants ORDER BY nom ASC")->fetchA
 
     <div class="main">
         <div class="dashboard">
-            <h1>Enseignants...</h1>
+            h1><?= $titre ?></h1>
             <p>Bienvenue ! Voici un aperçu des activité de votre école.</p>
         </div>
 
